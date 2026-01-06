@@ -40,7 +40,7 @@
     {
       "zIndex": 150,
       "danceEvery": 0,
-      "position": [-120, 550],
+      "position": [-120, 528],
       "scale": [1, 1],
       "name": "limo",
       "animType": "sparrow",
@@ -63,7 +63,7 @@
     {
       "zIndex": 500,
       "danceEvery": 0,
-      "position": [-300, 160],
+      "position": [-12600, 160],
       "scale": [1, 1],
       "name": "fastCar",
       "animType": "sparrow",

@@ -8,9 +8,9 @@
   },
 
   "music": {
-    "asset": "Lunchbox",
-    "fadeTime": 2.0,
-    "looped": true
+    "asset": "",
+    "fadeTime": 0,
+    "looped": false
   },
 
   "outro": {
@@ -23,7 +23,7 @@
       "speaker": "senpai-angry",
       "speakerAnimation": "talk",
       "box": "roses",
-      "boxAnimation": "angrySenpai",
+      "boxAnimation": "idle",
 
       "text": ["Not bad for an ugly worm."]
     },

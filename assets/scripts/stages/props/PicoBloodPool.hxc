@@ -1,58 +1,36 @@
-import funkin.graphics.adobeanimate.FlxAtlasSprite;
-import flixel.math.FlxPoint;
-import flixel.FlxSprite;
 import funkin.graphics.FunkinSprite;
-import funkin.play.PlayState;
-import flixel.util.FlxTimer;
-import flixel.FlxG;
-import funkin.audio.FunkinSound;
 
-class PicoBloodPool extends FlxAtlasSprite
+class PicoBloodPool extends FunkinSprite
 {
+  var extendBloodPool:Bool = false;
 
-  var extend:Bool = false;
-
-  var el = null;
   public function new(x:Float, y:Float)
   {
-    super(x, y, Paths.animateAtlas("philly/erect/bloodPool", "week3"), {
-      FrameRate: 24.0,
-      Reversed: false,
-      // ?OnComplete:Void -> Void,
-      ShowPivot: false,
-      Antialiasing: true,
-      ScrollFactor: new FlxPoint(1, 1),
+    super(x, y);
+
+    loadTextureAtlas("philly/erect/bloodPool", "week3");
+
+    animation.onFinish.addOnce((_) -> {
+      extendBloodPool = true;
     });
 
-   // onAnimationFinish.add(finishCanAnimation);
-   onAnimationComplete.addOnce((_)->{
-    el = anim.curSymbol.getElement(0);
-    extend = true;
-  });
     this.visible = false;
   }
 
-  public function doAnim(){
-    playAnimation("poolAnim", true, false, false);
-    //backingTextYeah.anim.play("");
+  public function doAnim():Void
+  {
+    animation.play("", true);
     this.visible = true;
   }
-
 
   override public function update(elapsed:Float)
   {
     super.update(elapsed);
-    if (extend)
+
+    if (extendBloodPool)
     {
-      var val = 0.02 * elapsed;
-
-      var mat = el.matrix;
-      mat.a += val;
-      mat.d += val;
-
-      mat.tx -= el.symbol.transformationPoint.x * val;
-      mat.ty -= el.symbol.transformationPoint.y * val;
+      var extendFactor:Float = 0.02 * elapsed;
+      this.scale.set(this.scale.x + extendFactor, this.scale.y + extendFactor);
     }
-
   }
 }
