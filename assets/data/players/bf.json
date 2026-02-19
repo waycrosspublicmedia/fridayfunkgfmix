@@ -15,7 +15,6 @@
   "stickerPack": "standard-bf",
   "freeplayDJ": {
     "assetPath": "freeplay/freeplay-boyfriend",
-    "scriptClass": "BoyfriendFreeplayDJ",
     "cartoon": {
       "soundClickFrame": 80,
       "soundCartoonFrame": 85,
@@ -39,54 +38,54 @@
     "charSelect": {
       "transitionDelay": 0.45
     },
-    "text1": "BOYFRIEND",
+    "text1": "GALFRIEND",
     "text2": "HOT BLOODED IN MORE WAYS THAN ONE",
-    "text3": "PROTECT YO NUTS",
+    "text3": "PROTECT YO TITS",
     "animations": [
       {
         "name": "intro",
         "prefix": "boyfriend dj intro",
-        "offsets": [3.4, -135.5]
+        "offsets": [631.7, 362.6]
       },
       {
         "name": "idle",
         "prefix": "Boyfriend DJ",
-        "offsets": [10, 290]
+        "offsets": [625, 360]
       },
       {
         "name": "idleEasterEgg",
         "prefix": "bf dj afk",
-        "offsets": [10, 127.2]
+        "offsets": [1274.5, 418.5]
       },
       {
         "name": "confirm",
         "prefix": "Boyfriend DJ confirm",
-        "offsets": [-40, 289.5]
+        "offsets": [625, 360]
       },
       {
         "name": "fistPump",
         "prefix": "Boyfriend DJ fist pump",
-        "offsets": [10, 278.3]
+        "offsets": [625, 360]
       },
       {
         "name": "cartoon",
         "prefix": "Boyfriend DJ watchin tv OG",
-        "offsets": [-10, -167.5]
+        "offsets": [625, 360]
       },
       {
         "name": "loss",
         "prefix": "Boyfriend DJ loss reaction 1",
-        "offsets": [10, 277.3]
+        "offsets": [625, 360]
       },
       {
         "name": "charSelect",
         "prefix": "Boyfriend DJ to CS",
-        "offsets": [-51.5, 210.4]
+        "offsets": [625, 360]
       },
       {
         "name": "newUnlock",
         "prefix": "Boyfriend DJ new character ",
-        "offsets": [-144.5, 69.2]
+        "offsets": [625, 360]
       }
     ]
   },
@@ -114,7 +113,7 @@
         "startFrameLabel": "INTRO",
         "filter": "naughty",
         "zIndex": 500,
-        "offsets": [403, -305],
+        "offsets": [1342, 370],
         "loopFrameLabel": "LOOP START"
       },
       {
@@ -123,7 +122,7 @@
         "filter": "naughty",
         "zIndex": 501,
         "delay": 4.41,
-        "offsets": [630, 300],
+        "offsets": [1342, 370],
         "loopFrame": 43
       },
       {
@@ -132,7 +131,7 @@
         "startFrameLabel": "INTRO 2",
         "filter": "safe",
         "zIndex": 500,
-        "offsets": [403, -305],
+        "offsets": [1342, 370],
         "loopFrameLabel": "LOOP 2"
       },
       {
@@ -141,7 +140,7 @@
         "filter": "safe",
         "zIndex": 501,
         "delay": 4.41,
-        "offsets": [413, 314],
+        "offsets": [650, 370],
         "scale": 0.6,
         "sound": "shared:tickleFight",
         "loopFrameLabel": "LOOP"
@@ -154,7 +153,7 @@
         "startFrameLabel": "INTRO",
         "filter": "naughty",
         "zIndex": 500,
-        "offsets": [403, -305],
+        "offsets": [1342, 370],
         "loopFrameLabel": "LOOP START"
       },
       {
@@ -163,7 +162,7 @@
         "filter": "naughty",
         "zIndex": 501,
         "delay": 4.41,
-        "offsets": [630, 300],
+        "offsets": [1342, 370],
         "loopFrame": 43
       },
       {
@@ -172,7 +171,7 @@
         "startFrameLabel": "INTRO 2",
         "filter": "safe",
         "zIndex": 500,
-        "offsets": [403, -305],
+        "offsets": [1342, 370],
         "loopFrameLabel": "LOOP 2"
       },
       {
@@ -181,7 +180,7 @@
         "filter": "safe",
         "zIndex": 501,
         "delay": 4.41,
-        "offsets": [413, 314],
+        "offsets": [650, 370],
         "scale": 0.6,
         "sound": "shared:tickleFight",
         "loopFrameLabel": "LOOP"
@@ -192,7 +191,8 @@
         "renderType": "animateatlas",
         "assetPath": "shared:resultScreen/results-bf/resultsEXCELLENT",
         "zIndex": 500,
-        "offsets": [560.85, -410.35],
+        "offsets": [1329, 429],
+
         "loopFrame": 29
       }
     ],
@@ -202,7 +202,7 @@
         "assetPath": "shared:resultScreen/results-bf/resultsGREAT/gf",
         "scale": 0.93,
         "delay": 0.25,
-        "offsets": [563.364, -123.186],
+        "offsets": [802, 331],
         "zIndex": 499,
 
         "loopFrame": 9
@@ -212,7 +212,7 @@
         "assetPath": "shared:resultScreen/results-bf/resultsGREAT/bf",
         "scale": 0.93,
         "zIndex": 500,
-        "offsets": [655.3, -247.95],
+        "offsets": [929, 363],
 
         "loopFrame": 15
       }
@@ -222,7 +222,8 @@
         "renderType": "animateatlas",
         "assetPath": "shared:resultScreen/results-bf/resultsGOOD/bf",
         "zIndex": 501,
-        "offsets": [645.4, -214.8],
+        "offsets": [662, 371],
+
         "loopFrame": 14
       },
       {
@@ -239,7 +240,7 @@
         "renderType": "animateatlas",
         "scriptClass": "BFShitResults",
         "zIndex": 500,
-        "offsets": [570.5, -390.5],
+        "offsets": [0, 20],
         "loopFrameLabel": "Loop Start"
       }
     ]
